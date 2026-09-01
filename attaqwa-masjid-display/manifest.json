@@ -1,0 +1,9 @@
+{
+  "name": "Masjid At-Taqwa Digital Display",
+  "short_name": "At-Taqwa",
+  "start_url": ".",
+  "display": "fullscreen",
+  "background_color": "#F6F0E4",
+  "theme_color": "#173F67",
+  "lang": "id"
+}

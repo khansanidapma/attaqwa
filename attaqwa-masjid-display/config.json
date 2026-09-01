@@ -1,0 +1,24 @@
+{
+  "masjidName": "Masjid At-Taqwa",
+  "theme": "blue-cream",
+  "calculationMethod": 20,
+  "school": 0,
+  "calculationLabel": "Metode Muslim World League • Asr Syafi'i",
+  "announcement": "Selamat datang di Masjid At-Taqwa. Mohon menjaga ketenangan dan kebersihan masjid.",
+  "dailyMessage": "Menjaga salat berarti menjaga hubungan dengan Allah.",
+  "fallback": {
+    "lat": -6.595,
+    "lon": 106.816,
+    "label": "Bogor, Jawa Barat"
+  },
+  "features": [
+    "automatic-geolocation",
+    "prayer-countdown",
+    "hijri-date",
+    "qibla-bearing",
+    "fullscreen-display",
+    "responsive-layout",
+    "offline-friendly-cache",
+    "editable-json-content"
+  ]
+}
