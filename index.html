@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173F67">
+  <title>Masjid At-Taqwa — Digital Display</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="mosque-mark">☾</div>
+        <div>
+          <div class="brand-name">AT-TAQWA</div>
+          <div class="brand-sub">MASJID • DIGITAL DISPLAY</div>
+        </div>
+      </div>
+      <div class="top-status">
+        <span id="connectionDot" class="status-dot"></span>
+        <span id="connectionText">Online</span>
+        <button id="fullscreenBtn" class="icon-btn" title="Fullscreen">⛶</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-grid">
+        <div class="hero-card">
+          <div class="eyebrow">WAKTU SEKARANG</div>
+          <div id="clock" class="clock">--:--:--</div>
+          <div id="dateLine" class="date-line">Memuat tanggal…</div>
+          <div id="hijriLine" class="hijri-line">Memuat tanggal Hijriah…</div>
+          <div class="location-row">
+            <span>⌖</span>
+            <span id="locationText">Mendeteksi lokasi…</span>
+          </div>
+        </div>
+
+        <div class="next-card">
+          <div class="eyebrow">SALAT BERIKUTNYA</div>
+          <div id="nextPrayerName" class="next-name">—</div>
+          <div id="nextPrayerTime" class="next-time">--:--</div>
+          <div class="countdown-label">Menuju waktu salat</div>
+          <div id="countdown" class="countdown">--:--:--</div>
+          <div id="currentLabel" class="current-label">Memuat jadwal…</div>
+        </div>
+      </section>
+
+      <section class="prayer-section">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">JADWAL HARI INI</div>
+            <h2>Waktu Salat</h2>
+          </div>
+          <div class="method-pill" id="methodLabel">Perhitungan otomatis</div>
+        </div>
+        <div id="prayerGrid" class="prayer-grid"></div>
+      </section>
+
+      <section class="info-grid">
+        <article class="info-card">
+          <div class="card-icon">☀</div>
+          <div>
+            <div class="card-kicker">MATAHARI</div>
+            <div class="sun-times"><span>Terbit <b id="sunrise">--:--</b></span><span>Terbenam <b id="sunset">--:--</b></span></div>
+          </div>
+        </article>
+        <article class="info-card">
+          <div class="card-icon">🧭</div>
+          <div>
+            <div class="card-kicker">ARAH KIBLAT</div>
+            <div class="qibla-value"><b id="qibla">--°</b> dari Utara</div>
+          </div>
+        </article>
+        <article class="info-card announcement-card">
+          <div class="card-icon">✦</div>
+          <div>
+            <div class="card-kicker">PENGUMUMAN</div>
+            <div id="announcement" class="announcement">Selamat datang di Masjid At-Taqwa.</div>
+          </div>
+        </article>
+      </section>
+
+      <section class="quote-card">
+        <div class="quote-mark">“</div>
+        <div>
+          <div class="card-kicker">PESAN HARI INI</div>
+          <div id="quoteText" class="quote-text">Menjaga salat berarti menjaga hubungan dengan Allah.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Masjid At-Taqwa</span>
+      <span>•</span>
+      <span id="footerLocation">Lokasi otomatis</span>
+      <span>•</span>
+      <span id="lastUpdated">Belum diperbarui</span>
+    </footer>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
