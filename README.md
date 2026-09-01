@@ -1,0 +1,2 @@
+# attaqwa
+sholat bikin adem
